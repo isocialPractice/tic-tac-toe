@@ -17,6 +17,7 @@ Simple tic tac toe game using:
  [W3Schools HTML Canvas Tutorial](https://www.w3schools.com/graphics/canvas_intro.asp).
  
  The game is currently one player. Below is a video illustrating
- User Interface and features:
+ User Interface and features: 
+ 
  ![Tic tac toe user Interface and features](img/example.gif)
  
