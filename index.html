@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Tic Tac Toe</title> 
+ <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+
+<body>
+
+<!-- GAME HEADING -->
+<div class="gameBorder">
+<h1 class="gameSelection">Start As</h1>
+<br>
+<span id="storeStart"></span><span id="compTurn"></span>
+<div class="selectPlayer">
+ <button class="selectsPlayer" id="varX" 
+  onClick="startAs(this.id)">X</button>
+ <button class="selectsPlayer" id="varO" 
+  onClick="startAs(this.id)">O</button>
+</div>
+<br>
+<hr>
+
+<!-- BOARD -->
+<div class ="board">
+ <table class="theBoard" border="1">
+  <tr class="gameRow topGameRow">
+   <td 
+    class="gameBox gameBoxWithBorder" id="1" 
+    onClick="clicked(this.id)"></td>
+   <td 
+    class="gameBox gameBoxWithBorder" id="2" 
+    onClick="clicked(this.id)"></td>
+   <td 
+    class="gameBox" id="3" 
+    onClick="clicked(this.id)"></td>
+  </tr>
+  <tr class="gameRow">
+   <td 
+    class="gameBox gameBoxWithBorder" id="4" 
+    onClick="clicked(this.id)"></td>
+   <td 
+    class="gameBox gameBoxWithBorder" id="5" 
+    onClick="clicked(this.id)"></td>
+   <td 
+    class="gameBox" id="6" 
+    onClick="clicked(this.id)"></td>
+  </tr>
+  <tr class="gameRow bottomGameRow">
+   <td 
+    class="gameBox gameBoxWithBorder" id="7" 
+    onClick="clicked(this.id)"></td>
+   <td 
+    class="gameBox gameBoxWithBorder" id="8" 
+    onClick="clicked(this.id)"></td>
+   <td 
+    class="gameBox" id="9" 
+    onClick="clicked(this.id)"></td>
+  </tr>
+ </table>
+ 
+<!-- SCOREBOARD --> 
+ <div class="scoreBoard">
+  <h2 class="playerScore">X: </h2>
+  <p class="playersScore" id="xScore">0</p>
+  <h2 class="playerScore">O: </h2>
+  <p class="playersScore" id="oScore">0</p>
+ </div>
+</div>
+<hr>
+</div>	
+<!-- GAME STORAGE -->
+<div class="row" id="gameStorage">
+  <h4 id="a1"></h4>
+    <h4 id="a2"></h4>
+    <h4 id="a3"></h4>
+  <h4 id="a4"></h4>
+   <h4 id="a5"></h4>
+    <h4 id="a6"></h4>
+  <h4 id="a7"></h4>
+    <h4 id="a8"></h4>
+    <h4 id="a9"></h4>			
+ </div>
+
+<!-- GAME JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
